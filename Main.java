@@ -6,10 +6,13 @@ public class Main {
         System.out.println("Ваша сумма: ");
         int summa = input.nextInt(); // вводим сумму пополнения
         int balance2 = balance+summa; //баланс после пополнения
-        int bonus = summa/100; // расчет бонуса за каждые 100 руб
+
+
         if(summa >=1000){
+            int bonus = summa/100; // расчет бонуса за каждые 100 руб
+            int currentBalance = bonus+ balance2; // баланс с бонусом
             System.out.println(" Вам начислен бонус: "+ bonus);
-            System.out.println(" Ваш текущий баланс: "+ balance2);
+            System.out.println(" Ваш текущий баланс: "+ currentBalance);
         }
 
         if(summa <1000){
